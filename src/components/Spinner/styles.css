@@ -8,6 +8,17 @@
   z-index: 10;
   font-family: var(--font-mate-sc); /* Utiliza la fuente importada */
   font-size: 20px; 
+  .divContent{
+    align-items: center;
+    justify-content: center;
+
+  }
+  .imageLogo{
+    height: 50%;
+  }
+  .title{
+    font-size: 25px;
+  }
 }
 
 .spinner {
@@ -29,3 +40,32 @@
       transform: rotate(360deg);
     }
   }
+
+  @media (max-width: 767px) {
+    
+  .spinner-container {
+    margin-top: 110px;
+
+  align-items: flex-start;
+
+    font-size: 15px; 
+    text-align: center;
+  }
+  .divContent{
+    align-items: flex-start;
+    justify-content: flex-start !important;
+  }
+    .spinner {
+        width: 300px;
+        height: 300px;
+    }
+    .title{
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .imageLogo{
+      margin-top: 60px;
+      height: 200px !important;
+    }
+    
+}
