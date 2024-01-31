@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+  }
+
+.starfield {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url('/assets/StarField.png'); 
+  background-size: cover;
+  animation: fall 10s linear infinite; 
+  z-index: 20;
+}
+  
+@keyframes fall {
+    0% {
+      background-position: 0 0; 
+    }
+    100% {
+      background-position: 0 157vh;
+    }
+  }
