@@ -8,11 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors:{
+        white: "#FFFFFF",
+        pattyPan: "#EFB810",
+        violetDawn: "#A89B9B",
+        black: "#000000",
       },
+      fontFamily: {
+        primary: "MateSC-Regular",
+        secondary: "Monsterrat-Regular",
+        secondaryBold: "Monsterrat-ExtraBold",
+      },
+      devices: {
+        smallMobile: "(max-width: 360px)",
+        smallTablet: "(max-width: 520px)",
+        mobile: "(max-width: 768px)",
+        bigTablet: "(max-width: 800px)",
+        biggerMobile: "(max-width: 1024px)",
+        middleResolutionDeskop: "(min-width: 1350px)",
+        bigResolutionDesktop: "(min-width: 1900px)"
+      }
     },
   },
   plugins: [],

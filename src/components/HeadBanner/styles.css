@@ -1,0 +1,14 @@
+.bg-image_Header {
+    background-image: url("/assets/fondo definitivo gris.png");
+    background-size: cover;
+  }
+  .bg-image-AboutUs {
+    background-image: url("/assets/fondo about us.png");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .bg-image-Contact {
+    background-image: url("/assets/fondo_contact.png");
+    background-size: cover;
+    background-position: bottom;
+  }
