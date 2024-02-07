@@ -1,7 +1,7 @@
 export default function Contact(){
     return(
-        <div className="w-full h-4/5 mx-24  flex justify-center items-center mt-6">
-            <form className="w-3/5 border border-violetDawn p-10 rounded-2xl bg-violetDawn opacity-80">
+        <div className="w-full h-4/5 md:mx-24  flex justify-center items-center mt-10">
+            <form className="w-full md:w-3/5 border border-violetDawn p-10 md:rounded-2xl bg-violetDawn opacity-80">
             <div>
               <label htmlFor="name" className="font-secondary text-2xl text-black opacity-100">Nombre:</label>
             </div>

@@ -4,6 +4,7 @@ import Header from "@/components/HeadBanner/Header/Header";
 import HeadBanner from "@/components/HeadBanner/HeadBanner";
 import ServicesBanner from "@/components/ServicesBanner/ServicesBanner";
 import Contact from "@/components/HeadBanner/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
        <HeadBanner >
         <Contact />
        </HeadBanner>
+       <Footer />
     </main>
   );
 }

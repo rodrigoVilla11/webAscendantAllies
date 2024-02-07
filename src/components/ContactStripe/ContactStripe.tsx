@@ -3,8 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { useWidth } from "@/hooks/useWidth";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function ContactStripe({socialMedia} : any){
     const width = useWidth();
@@ -12,42 +14,48 @@ export default function ContactStripe({socialMedia} : any){
     return(
         <>
         {socialMedia ? (
-            <div className="w-full md:h-2/5 bg-black flex flex-col justify-center items-center md:flex-row p-10 text-white">
-                <Swiper
-                style={{
-                    '--swiper-navigation-color': '#fff',
-                    '--swiper-pagination-color': '#fff',
-                  }}
-                spaceBetween={20}
+            <div className="w-full md:h-2/5 bg-black p-10  text-white flex justify-start items-center">
+                <Swiper                 
                 centeredSlides={true}
-                slidesPerView={1}
+                slidesPerView={isMobile ? 1 : 3}
                 loop={true}
                 autoplay={{
                   delay: 5000,
                   disableOnInteraction: false,
                 }}
-                pagination={{
-                  clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
+                modules={[Autoplay]}
             >
 
             <SwiperSlide>
-                <div className="mx-10 my-8 border w-20 h-24">H</div>
+                <div className="mx-10 my-8 w-auto h-48 flex flex-col md:flex-row justify-center items-center">
+                <FontAwesomeIcon icon={faInstagram} size={isMobile ? '8x' : '10x'} />
+                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">@ascendantallies</h2>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="mx-10 my-8 border w-20 h-24">O</div>
+                <div className="mx-10 my-8 w-auto h-48 flex flex-col md:flex-row justify-center items-center">
+                <FontAwesomeIcon icon={faXTwitter} size={isMobile ? '8x' : '10x'}/>
+                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">@ascendantallies</h2>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="mx-10 my-8 border w-20 h-24">L</div>
+                <div className="mx-10 my-8 w-auto h-48 flex flex-col md:flex-row justify-center items-center">
+                <FontAwesomeIcon icon={faFacebook} size={isMobile ? '8x' : '10x'}/>
+                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">Ascendant Allies</h2>
+
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="mx-10 my-8 border w-20 h-24">A</div>
+                <div className="mx-10 my-8  w-auto h-48 flex flex-col md:flex-row justify-center items-center">
+                <FontAwesomeIcon icon={faLinkedin} size={isMobile ? '8x' : '10x'}/>
+                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">Ascendant Allies</h2>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="mx-10 my-8 border w-20 h-24">S</div>
+                <div className="mx-10 my-8 w-auto h-48 flex flex-col md:flex-row justify-center items-center">
+                    <FontAwesomeIcon icon={faWhatsapp} size={isMobile ? '8x' : '10x'}/>
+                    <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">Link Whatsapp</h2>
+                </div>
             </SwiperSlide>
             </Swiper>
             </div>

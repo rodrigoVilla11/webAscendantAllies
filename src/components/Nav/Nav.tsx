@@ -11,7 +11,7 @@ export default function Nav(){
         setToggleMenuMobile(!toggleMenuMobile)
     }
     return(<>
-        <nav className="fixed w-full h-20  flex justify-between pt-2 pb-2 bg-white bg-opacity-90">
+        <nav className="fixed w-full h-20  flex justify-between pt-2 pb-2 bg-white bg-opacity-90 z-50">
             <div className="flex w-full justify-center md:justify-start items-center space-x-0 md:ml-10">
                 <div className="px-4">
                 <Image className="" src="/assets/Logo_AscendantAllies_no_background.png" alt="logo_AscendantAllies" width="40" height="20"/>
