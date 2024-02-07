@@ -16,7 +16,7 @@ export default function Header(){
                      <h1 className="text-2xl md:text-3xl font-primary text-violetDawn">ASCENDANT <span className="text-white">ALLIES</span></h1> 
                 </div>}
                 <div  className="h-2/3 w-full mt-6 md:mt-2 flex flex-col justify-center items-center ">
-                    <h2 className="text-2xl md:text-6xl font-primary text-black ">BIENVENIDOS</h2>
+                    <h2 className="text-4xl md:text-6xl font-primary text-black ">BIENVENIDOS</h2>
                 {/* <p className="font-secondary text-xl md:text-lg text-white p-5 text-center">
                 Nos unimos con un propósito común: <span className="text-bold">Acercarnos hacia nuevas alturas juntos</span>. Somos una comunidad de colaboradores formados, creando alianzas poderosas para superar <span className="text-bold">desafíos</span> y alcanzar <span className="text-bold">metas ambiciosas.</span> Nuestro <span className="text-bold">compromiso</span> con el éxito no se limita solo a nosotros, sino que se extiende a cada miembro de nuestra red.
                 </p> */}

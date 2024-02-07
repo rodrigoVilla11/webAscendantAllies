@@ -31,7 +31,7 @@ export default function Nav(){
             
         </nav>
         {toggleMenuMobile && 
-                <div className="w-full h-auto flex justify-center items-center pt-24  bg-white bg-opacity-90 border-b-2 border-violetDawn pb-6">
+                <div className="w-full h-auto flex justify-center items-center pt-24  bg-white bg-opacity-90 border-b-2 border-violetDawn pb-6 absolute z-40">
                 <ul className="flex flex-col justify-center items-center space-y-6 ">
                     <li className="text-2xl font-primary text-violetDawn hover:cursor-pointer hover:text-black">INICIO</li>
                     

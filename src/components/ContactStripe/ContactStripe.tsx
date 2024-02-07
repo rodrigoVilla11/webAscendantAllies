@@ -28,14 +28,18 @@ export default function ContactStripe({socialMedia} : any){
 
             <SwiperSlide>
                 <div className="mx-10 my-8 w-auto h-48 flex flex-col md:flex-row justify-center items-center">
-                <FontAwesomeIcon icon={faInstagram} size={isMobile ? '8x' : '10x'} />
-                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">@ascendantallies</h2>
+                <a href="https://www.instagram.com/ascendantallies/" target="blank" className='flex flex-col md:flex-row justify-center items-center'>
+                    <FontAwesomeIcon icon={faInstagram} size={isMobile ? '8x' : '10x'} />
+                    <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">@ascendantallies</h2>
+                </a>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="mx-10 my-8 w-auto h-48 flex flex-col md:flex-row justify-center items-center">
-                <FontAwesomeIcon icon={faXTwitter} size={isMobile ? '8x' : '10x'}/>
-                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">@ascendantallies</h2>
+                <a href="https://twitter.com/AscendantAllies" target="blank" className='flex flex-col md:flex-row justify-center items-center'>
+                    <FontAwesomeIcon icon={faXTwitter} size={isMobile ? '8x' : '10x'}/>
+                    <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">@ascendantallies</h2>
+                </a>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -47,8 +51,10 @@ export default function ContactStripe({socialMedia} : any){
             </SwiperSlide>
             <SwiperSlide>
                 <div className="mx-10 my-8  w-auto h-48 flex flex-col md:flex-row justify-center items-center">
-                <FontAwesomeIcon icon={faLinkedin} size={isMobile ? '8x' : '10x'}/>
-                <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">Ascendant Allies</h2>
+                <a href="https://www.linkedin.com/company/ascendant-allies/" target="blank" className='flex flex-col md:flex-row justify-center items-center'>
+                    <FontAwesomeIcon icon={faLinkedin} size={isMobile ? '8x' : '10x'}/>
+                    <h2 className="text-3xl md:text-4xl font-primary text-white p-5 text-center md:text-left">Ascendant Allies</h2>
+                </a>
                 </div>
             </SwiperSlide>
             <SwiperSlide>

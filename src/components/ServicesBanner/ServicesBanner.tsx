@@ -14,7 +14,7 @@ export default function ServicesBanner(){
     const isMobile = width < 769
     return(
         <div className="flex flex-col justify-center items-center w-full h-screen bg-violetDawn p-5">
-            <h2 className="text-3xl md:text-4xl font-primary text-black ">Nuestros Servicios</h2>
+            <h2 className="text-3xl md:text-4xl font-primary text-black pt-10">Nuestros Servicios</h2>
         <div className="flex justify-center items-center w-full h-screen bg-violetDawn md:p-10">
              <Swiper
              style={{
@@ -39,9 +39,9 @@ export default function ServicesBanner(){
             <SwiperSlide>
                 <div className="mx-20 my-8"><Image src="/assets/Logo_AscendantAllies_no_background.png" alt="logo_AscendantAllies" width="200" height="100"/></div>
             </SwiperSlide>
-            {services.map(service => {
+            {services.map((service, index) => {
               return (
-                <SwiperSlide><CardService title={service.title} description={service.description}/></SwiperSlide>
+                <SwiperSlide key={index}><CardService title={service.title} description={service.description} icon={service.icon} /></SwiperSlide>
               )
             })}
             
