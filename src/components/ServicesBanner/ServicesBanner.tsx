@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useWidth } from "@/hooks/useWidth";
 import services from "@/jsons/services"
+import "./swiper.css"
 
 export default function ServicesBanner(){
     const width = useWidth();
@@ -17,10 +18,6 @@ export default function ServicesBanner(){
             <h2 className="text-3xl md:text-4xl font-primary text-black pt-10">Nuestros Servicios</h2>
         <div className="flex justify-center items-center w-full h-screen bg-violetDawn md:p-10">
              <Swiper
-             style={{
-                '--swiper-navigation-color': '#fff',
-                '--swiper-pagination-color': '#fff',
-              }}
                spaceBetween={30}
                centeredSlides={true}
                slidesPerView={isMobile ? 1 : 3}
