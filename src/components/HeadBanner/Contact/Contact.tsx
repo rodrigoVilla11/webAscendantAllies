@@ -22,7 +22,7 @@ export default function Contact(){
             alert("Please complete the form correctly.");
         }else{
           try {
-            await axios.post('https://back-ascendantallies.onrender.com', form);
+            await axios.post('https://back-ascendantallies.onrender.com/send-email', form);
             alert('Email send successfully');
           } catch (error) {
             console.error('Error sending email', error);
