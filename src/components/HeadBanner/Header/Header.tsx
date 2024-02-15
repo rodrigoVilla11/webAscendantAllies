@@ -8,7 +8,7 @@ export default function Header(){
     return(
         <div className="w-full h-4/5 md:mx-24 flex flex-col md:flex-row justify-center items-center">
             {isMobile && <div className="mt-18">
-                <Image src="/assets/sketch_margeting01.png" alt="markteing"  width="400" height="400"/> 
+                <Image src="/assets/sketch_margeting01.png" alt="markteing"  width="300" height="300"/> 
                 </div>}
             <div className="w-full md:w-1/2 h-4/5 flex flex-col ">
                 {!isMobile && <div className="h-1/3 w-full flex justify-center items-center md:mb-8">
@@ -20,7 +20,7 @@ export default function Header(){
                 {/* <p className="font-secondary text-xl md:text-lg text-white p-5 text-center">
                 Nos unimos con un propósito común: <span className="text-bold">Acercarnos hacia nuevas alturas juntos</span>. Somos una comunidad de colaboradores formados, creando alianzas poderosas para superar <span className="text-bold">desafíos</span> y alcanzar <span className="text-bold">metas ambiciosas.</span> Nuestro <span className="text-bold">compromiso</span> con el éxito no se limita solo a nosotros, sino que se extiende a cada miembro de nuestra red.
                 </p> */}
-                <p className="font-secondary text-xl md:text-2xl text-pattyPan px-5 md:p-0 md:pt-2 text-center ">
+                <p className="font-secondary text-xl md:text-2xl text-white px-5 md:p-0 md:pt-2 text-center ">
                 En <span className="font-bold">Ascendant Allies</span>, nos enorgullece ser tu aliado estratégico en la travesía hacia el <span className="font-bold">éxito empresarial</span>. Especializados en una gama completa de <span className="font-bold">servicios</span>, desde diseño <span className="font-bold">UX/UI</span> y <span className="font-bold">marketing</span> hasta<span className="font-bold"> arquitectura web</span> y más, ofrecemos soluciones integrales para impulsar tu <span className="font-bold">crecimiento</span>.
                 </p>
                 </div>
