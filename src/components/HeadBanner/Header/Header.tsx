@@ -8,7 +8,7 @@ export default function Header(){
     return(
         <div className="w-full h-4/5 md:mx-24 flex flex-col md:flex-row justify-center items-center">
             {isMobile && <div className="mt-18">
-                <Image src="/assets/sketch_margeting01.png" alt="markteing"  width="300" height="300"/> 
+                <Image src="/assets/sketch_margeting01.png" alt="markteing"  width="350" height="350"/> 
                 </div>}
             <div className="w-full md:w-1/2 h-4/5 flex flex-col ">
                 {!isMobile && <div className="h-1/3 w-full flex justify-center items-center md:mb-8">
@@ -16,7 +16,7 @@ export default function Header(){
                      <h1 className="text-2xl md:text-3xl font-primary text-violetDawn">ASCENDANT <span className="text-white">ALLIES</span></h1> 
                 </div>}
                 <div  className="h-2/3 w-full mt-4 md:mt-2 flex flex-col justify-center items-center ">
-                    <h2 className="text-3xl md:text-6xl font-primary text-white ">BIENVENIDOS</h2>
+                    <h2 className="text-5xl md:text-6xl font-primary text-white ">BIENVENIDOS</h2>
                 {/* <p className="font-secondary text-xl md:text-lg text-white p-5 text-center">
                 Nos unimos con un propósito común: <span className="text-bold">Acercarnos hacia nuevas alturas juntos</span>. Somos una comunidad de colaboradores formados, creando alianzas poderosas para superar <span className="text-bold">desafíos</span> y alcanzar <span className="text-bold">metas ambiciosas.</span> Nuestro <span className="text-bold">compromiso</span> con el éxito no se limita solo a nosotros, sino que se extiende a cada miembro de nuestra red.
                 </p> */}
